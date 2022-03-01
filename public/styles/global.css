@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.scroll__container {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+}
+.scroll__child {
+  scroll-snap-align: start;
+}
+.home__hero {
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/8607d312-c4d0-4ce2-955d-50d728ae845f/916c982d-7b63-4815-a46d-4322ecee2587/IN-en-20220226-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    center center no-repeat;
+  color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: bl;
+  -webkit-mask-image: linear-gradient(to top, transparent 2%, black 25%);
+  mask-image: linear-gradient(to top, transparent 2%, black 25%);
+}
+.black__overlay {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 0.7)
+  );
+}
