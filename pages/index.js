@@ -3,8 +3,13 @@ import Card from "../components/Card";
 import AssignmentTurnedInIcon from "@material-ui/icons/AssignmentTurnedIn";
 import { SearchOutlined } from "@material-ui/icons";
 import MouseIcon from "@material-ui/icons/Mouse";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    let footer = document.querySelector("footer");
+    footer.style.scrollSnapAlign = "start";
+  }, []);
   return (
     <>
       <Head>
